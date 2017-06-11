@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E24FDCFA-4861-4015-8BA7-9798A7F82182}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SageCRMConnector</RootNamespace>
+    <AssemblyName>SageCRMConnector</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Sage.Common.Syndication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c59b718b5ca510a8, processorArchitecture=MSIL" />
+    <Reference Include="Sage.Integration.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3f422f0ff54abde1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Sage\Assemblies\SData\Sage.Integration.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sage.Integration.Server.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3f422f0ff54abde1, processorArchitecture=MSIL" />
+    <Reference Include="Sage.Utilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c59b718b5ca510a8, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\bankAccountFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\calendarFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\caseFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\commodityDimensionFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\commodityFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\commodityGroupFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\commodityIdentifierFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\commodityVariantFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\companyFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\contactFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\contactGroupFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\customerFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\customerGroupFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\emailFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\financialAccountFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\interactionFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\locationFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\noteFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\opportunityFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\paymentFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\paymentLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\phoneNumberFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\postalAddressFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\priceFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\priceListFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\projectFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\projectLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseCreditFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseCreditLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseInvoiceFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseInvoiceLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseOrderDeliveryFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseOrderDeliveryLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseOrderFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseOrderLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseRequisitionFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseRequisitionLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseReturnDeliveryFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseReturnDeliveryLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseReturnFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\purchaseReturnLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\receiptFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\receiptLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesCreditFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesCreditLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesInvoiceFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesInvoiceLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesOrderDeliveryFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesOrderDeliveryLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesOrderFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesOrderLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesPersonFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesQuotationFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesQuotationLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesReturnDeliveryFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesReturnDeliveryLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesReturnFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\salesReturnLineFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\supplierFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\supplierGroupFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\taxCodeFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\tradingAccountFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\unitOfMeasureFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Do Not Modify\Sage.crmErp.x2008.Feeds\unitOfMeasureGroupFeedEntry.Schema.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\bankAccountFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\bankAccountFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\calendarFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\calendarFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\caseFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\caseFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\commodityDimensionFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\commodityDimensionFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\commodityFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\commodityFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\commodityGroupFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\commodityGroupFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\commodityIdentifierFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\commodityIdentifierFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\commodityVariantFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\commodityVariantFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\companyFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\companyFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\contactFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\contactFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\contactGroupFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\contactGroupFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\customerFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\customerFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\customerGroupFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\customerGroupFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\emailFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\emailFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\financialAccountFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\financialAccountFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\interactionFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\interactionFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\locationFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\locationFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\noteFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\noteFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\opportunityFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\opportunityFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\paymentFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\paymentFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\paymentLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\paymentLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\phoneNumberFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\phoneNumberFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\postalAddressFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\postalAddressFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\priceFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\priceFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\priceListFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\priceListFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\projectFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\projectFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\projectLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\projectLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseCreditFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseCreditFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseCreditLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseCreditLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseInvoiceFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseInvoiceFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseInvoiceLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseInvoiceLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseOrderDeliveryFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseOrderDeliveryFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseOrderDeliveryLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseOrderDeliveryLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseOrderFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseOrderFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseOrderLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseOrderLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseRequisitionFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseRequisitionFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseRequisitionLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseRequisitionLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseReturnDeliveryFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseReturnDeliveryFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseReturnDeliveryLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseReturnDeliveryLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseReturnFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseReturnFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseReturnLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\purchaseReturnLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\receiptFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\receiptFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\receiptLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\receiptLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesCreditFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesCreditFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesCreditLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesCreditLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesInvoiceFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesInvoiceFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesInvoiceLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesInvoiceLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesOrderDeliveryFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesOrderDeliveryFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesOrderDeliveryLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesOrderDeliveryLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesOrderFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesOrderFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesOrderLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesOrderLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesPersonFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesPersonFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesQuotationFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesQuotationFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesQuotationLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesQuotationLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesReturnDeliveryFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesReturnDeliveryFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesReturnDeliveryLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesReturnDeliveryLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesReturnFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesReturnFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesReturnLineFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\salesReturnLineFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\supplierFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\supplierFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\supplierGroupFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\supplierGroupFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\taxCodeFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\taxCodeFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\tradingAccountFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\tradingAccountFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\unitOfMeasureFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\unitOfMeasureFeedEntry.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\unitOfMeasureGroupFeed.cs" />
+    <Compile Include="SData References\SDataSchema\Generated Files\Sage.crmErp.x2008.Feeds\unitOfMeasureGroupFeedEntry.cs" />
+    <Compile Include="SDataExample.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="crmErp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SData References\SDataSchema\SDataSchema.sdataref" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

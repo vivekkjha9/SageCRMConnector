@@ -1,0 +1,6 @@
+C:\SageCRMConnector\SageCRMConnector\SageCRMConnector\bin\Debug\SageCRMConnector.exe.config
+C:\SageCRMConnector\SageCRMConnector\SageCRMConnector\obj\x86\Debug\SageCRMConnector.csprojResolveAssemblyReference.cache
+C:\SageCRMConnector\SageCRMConnector\SageCRMConnector\bin\Debug\SageCRMConnector.exe
+C:\SageCRMConnector\SageCRMConnector\SageCRMConnector\bin\Debug\SageCRMConnector.pdb
+C:\SageCRMConnector\SageCRMConnector\SageCRMConnector\obj\x86\Debug\SageCRMConnector.exe
+C:\SageCRMConnector\SageCRMConnector\SageCRMConnector\obj\x86\Debug\SageCRMConnector.pdb
